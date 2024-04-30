@@ -58,7 +58,7 @@ We highly encourage [contributors](https://github.com/TryGhost/Ghost/blob/main/.
 
 The following are some tools we recommend for checking your work:
 
-* Test on screen readers using [Assistiv Labs](https://assistivlabs.com) – use this form to [request access](https://ghost.org/form) and see these [getting started videos](https://assistivlabs.com/support/getting-started) to help get oriented to the platform
+* Test on screen readers using [Assistiv Labs](https://assistivlabs.com) – use this form to [request access](https://ghost.org/form) and see these [getting started videos](https://assistivlabs.com/support/getting-started) for help getting oriented to the platform
 * [Microsoft Accessibility Insights](https://accessibilityinsights.io/)
 * [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/)
 * [Adobe Color Contrast Analyzer](https://color.adobe.com/create/color-contrast-analyzer)
