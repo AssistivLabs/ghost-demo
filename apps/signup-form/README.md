@@ -1,6 +1,6 @@
 # Embeddable Signup Form
 
-Embed a Ghost signup form on any site.
+Embed a Ghost signup form on any site, even yours!
 
 ## Development
 
