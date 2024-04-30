@@ -1,9 +1,20 @@
-Got some code for us? Awesome 🎊!
+<!-- Got some code for us? Awesome 🎊! Please fill in this template and check your PR against the below todos, thanks! -->
 
-Please include a description of your change & check your PR against this list, thanks!
+## Description
 
-- [ ] There's a clear use-case for this code change, explained below
-- [ ] Commit message has a short title & references relevant issues
-- [ ] The build will pass (run `yarn test:all` and `yarn lint`)
+<!-- Explain a clear use-case. Before and after screenshots are helpful. -->
 
-We appreciate your contribution!
+## Related issues
+
+<!-- If you write "Closes" followed by the Github issue number, it will automatically close the issue for you when the PR merges -->
+
+## Testing steps
+
+<!-- If changes are not covered by `yarn test:all`, describe how you tested them -->
+
+### Testing accessibility
+
+<!-- If this is a UI change or could otherwise effect accessibility, please run the below tests -->
+
+- [ ] [NVDA spot check instructions]([https://example.com](https://ghost.com/docs/accessibility/nvda)
+- [ ] [Windows High Contrast Mode spot check instructions](https://ghost.com/docs/accessibility/whcm)
