@@ -12,8 +12,8 @@ Our accessiblity strategy incorporates the components listed below to varying de
 
 * [Internal education](#internal-education)
 * [Shifting left into design process/tools](#shifting-left-into-design-processtools)
-* [Usability testing](#usability-testing)
-* [Manual auditing](#manual-auditing)
+	* [Usability testing](#usability-testing)
+	* [Manual auditing](#manual-auditing)
 * [Accessibility as part of our “definition of done” in the SDLC](#accessibility-as-part-of-our-definition-of-done-in-the-sdlc)
 	* [Linters to catch developer accessibility mistakes when coding](#linters-to-catch-developer-accessibility-mistakes-when-coding)
 	* [axe-core in CI](#axe-core-in-ci)
@@ -37,12 +37,12 @@ Whenever possible, we involve disabled people in the process of designing major 
 
 If you’re embarking on a major new feature for Ghost, you can use this form to [request a design review by our disabled community](https://ghost.org/form).
 
-## Usability testing
+### Usability testing
 
 For major UI changes, we tap our community to do usability testing on the following assistive technologies and tools:
 
 * Screen readers:
-	* NVDA on Windows – use this form to [request access to our Assistiv Labs account](https://ghost.org/form)
+	* NVDA on Windows
 	* TalkBack on Android
 	* VoiceOver on macOS
 	* VoiceOver on iOS
@@ -52,15 +52,18 @@ For major UI changes, we tap our community to do usability testing on the follow
 
 We can always use more volunteers to help with usability testing! Use this form to [add your name to the pool](https://ghost.org/form).
 
-## Manual auditing
+### Manual auditing
 
 We highly encourage [contributors](https://github.com/TryGhost/Ghost/blob/main/.github/CONTRIBUTING.md) to attempt to manually validate that UI changes maintain or improve the accessibility of Ghost.
 
 The following are some tools we recommend for checking your work:
 
+* Test on screen readers using [Assistiv Labs](https://assistivlabs.com) – use this form to [request access](https://ghost.org/form) and see these [getting started videos](https://assistivlabs.com/support/getting-started) to help get oriented to the platform
 * [Microsoft Accessibility Insights](https://accessibilityinsights.io/)
 * [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/)
 * [Adobe Color Contrast Analyzer](https://color.adobe.com/create/color-contrast-analyzer)
+
+By taking advantage of the resources listed above, you will help us by reducing the number of issues raised by the yearly external audits we commission.
 
 ## Accessibility as part of our “definition of done” in the SDLC
 
@@ -73,6 +76,8 @@ The following will help you avoid any surprises when it comes time to submit you
 ### Linters to catch developer accessibility mistakes when coding
 
 Most modern IDEs allow you to add a linter that will catch a certain class of accessibility bug as you’re writing your code. We won’t list them all, but an example is the [axe Accessibility Linter for Visual Studio](https://marketplace.visualstudio.com/items?itemName=deque-systems.vscode-axe-linter).
+
+We include [axe-core](https://github.com/dequelabs/axe-core) in our repo and you can scan for issues at any time by running `yarn:lint`.
 
 ### axe-core in CI
 
