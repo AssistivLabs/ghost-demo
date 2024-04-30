@@ -10,14 +10,14 @@ We want everyone to be equally able to use Ghost. To that end, we follow a multi
 
 Our accessiblity strategy incorporates the components listed below to varying degrees. We regularly complete self-reviews of our [accessiblity maturity](https://www.w3.org/TR/maturity-model/) to better understand the state of each of the following:
 
-* Internal education
-* Shifting left into design process/tools
-* Usability testing
-* Manual auditing
-* Accessibility as part of our “definition of done” in the SDLC
-	* Linters to catch developer accessibility mistakes when coding
-	* axe-core in CI
-	* End-to-end coverage
+* [Internal education](#internal-education)
+* [Shifting left into design process/tools](#shifting-left-into-design-processtools)
+* [Usability testing](#usability-testing)
+* [Manual auditing](#manual-auditing)
+* [Accessibility as part of our “definition of done” in the SDLC](#accessibility-as-part-of-our-definition-of-done-in-the-sdlc)
+	* [Linters to catch developer accessibility mistakes when coding](#linters-to-catch-developer-accessibility-mistakes-when-coding)
+	* [axe-core in CI](#axe-core-in-ci)
+	* [End-to-end coverage](#end-to-end-coverage)
 
 ## Internal education
 
