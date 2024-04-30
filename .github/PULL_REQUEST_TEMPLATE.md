@@ -16,5 +16,5 @@
 
 <!-- If this is a UI change or could otherwise effect accessibility, please run the below tests -->
 
-- [ ] [NVDA spot check instructions]([https://example.com](https://ghost.com/docs/accessibility/nvda)
+- [ ] [NVDA spot check instructions](https://ghost.com/docs/accessibility/nvda)
 - [ ] [Windows High Contrast Mode spot check instructions](https://ghost.com/docs/accessibility/whcm)
