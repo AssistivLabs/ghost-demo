@@ -12,8 +12,9 @@ Our accessiblity strategy incorporates the components listed below to varying de
 
 * [Internal education](#internal-education)
 * [Shifting left into design process/tools](#shifting-left-into-design-processtools)
-	* [Usability testing](#usability-testing)
-	* [Manual auditing](#manual-auditing)
+	* [Community usability testing](#community-usability-testing)
+	* [Manual validation](#manual-validation)
+	* [External audits](#external-audits)
 * [Accessibility as part of our “definition of done” in the SDLC](#accessibility-as-part-of-our-definition-of-done-in-the-sdlc)
 	* [Linters to catch developer accessibility mistakes when coding](#linters-to-catch-developer-accessibility-mistakes-when-coding)
 	* [axe-core in CI](#axe-core-in-ci)
@@ -37,7 +38,7 @@ Whenever possible, we involve disabled people in the process of designing major 
 
 If you’re embarking on a major new feature for Ghost, you can use this form to [request a design review by our disabled community](https://ghost.org/form).
 
-### Usability testing
+### Community usability testing
 
 For major UI changes, we tap our community to do usability testing on the following assistive technologies and tools:
 
@@ -52,7 +53,7 @@ For major UI changes, we tap our community to do usability testing on the follow
 
 We can always use more volunteers to help with usability testing! Use this form to [add your name to the pool](https://ghost.org/form).
 
-### Manual auditing
+### Manual validation
 
 We highly encourage [contributors](https://github.com/TryGhost/Ghost/blob/main/.github/CONTRIBUTING.md) to attempt to manually validate that UI changes maintain or improve the accessibility of Ghost.
 
@@ -64,6 +65,18 @@ The following are some tools we recommend for checking your work:
 * [Adobe Color Contrast Analyzer](https://color.adobe.com/create/color-contrast-analyzer)
 
 By taking advantage of the resources listed above, you will help us by reducing the number of issues raised by the yearly external audits we commission.
+
+### External audits
+
+On approximately a yearly cadence, the Ghost Foundation contracts with [Zenyth](https://www.zenythgroup.com) to provide comprehensive accessibility audits of our platform.
+
+Professional auditors at Zenyth review both workflows (e.g., newsletter subscription) and common elements (e.g., the website footer) against  [WCAG 2.1](https://www.w3.org/TR/WCAG21/) A and AA and provide Accessibility Conformance Reports (ACRs) for both the authoring platform and the subscriber-facing website.
+
+Review past ACRs:
+
+* [2023](https://ghost.org/accessibility/acr/2023)
+* [2022](https://ghost.org/accessibility/acr/2022)
+* [2021](https://ghost.org/accessibility/acr/2021)
 
 ## Accessibility as part of our “definition of done” in the SDLC
 
