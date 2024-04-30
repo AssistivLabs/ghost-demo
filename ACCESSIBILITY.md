@@ -14,11 +14,11 @@ Our accessiblity strategy incorporates the components listed below to varying de
 * [Shifting left into design process/tools](#shifting-left-into-design-processtools)
 	* [Community usability testing](#community-usability-testing)
 	* [Manual validation](#manual-validation)
-	* [External audits](#external-audits)
 * [Accessibility as part of our “definition of done” in the SDLC](#accessibility-as-part-of-our-definition-of-done-in-the-sdlc)
 	* [Linters to catch developer accessibility mistakes when coding](#linters-to-catch-developer-accessibility-mistakes-when-coding)
 	* [axe-core in CI](#axe-core-in-ci)
 	* [End-to-end coverage](#end-to-end-coverage)
+* [External audits](#external-audits)
 
 ## Internal education
 
@@ -66,18 +66,6 @@ The following are some tools we recommend for checking your work:
 
 By taking advantage of the resources listed above, you will help us by reducing the number of issues raised by the yearly external audits we commission.
 
-### External audits
-
-On approximately a yearly cadence, the Ghost Foundation contracts with [Zenyth](https://www.zenythgroup.com) to provide comprehensive accessibility audits of our platform.
-
-Professional auditors at Zenyth review both workflows (e.g., newsletter subscription) and common elements (e.g., the website footer) against  [WCAG 2.1](https://www.w3.org/TR/WCAG21/) A and AA and provide Accessibility Conformance Reports (ACRs) for both the authoring platform and the subscriber-facing website.
-
-Review past ACRs:
-
-* [2023](https://ghost.org/accessibility/acr/2023)
-* [2022](https://ghost.org/accessibility/acr/2022)
-* [2021](https://ghost.org/accessibility/acr/2021)
-
 ## Accessibility as part of our “definition of done” in the SDLC
 
 As we say in our [contributors guide](https://github.com/TryGhost/Ghost/blob/main/.github/CONTRIBUTING.md), we aim to merge any straightforward, well-understood bug fixes or improvements immediately, as long as they pass our tests (run `yarn test` to check locally).
@@ -99,3 +87,17 @@ Our GitHub Actions workflow runs [axe-core](https://github.com/dequelabs/axe-cor
 ### End-to-end coverage
 
 In addition to axe-core, our GitHub Actions workflow runs [Assistiv Labs end-to-end tests](https://assistivlabs.com/use-cases/end-to-end-accessibility-testing) across our critical user flows. Changes that result in new failures will be automatically blocked from merging.
+
+## External audits
+
+All of the preceding guidance is in service of end-users, ultimately, but our best proof that we’re doing the right thing by them is how our work performs in external audits.
+
+On approximately a yearly cadence, the Ghost Foundation contracts with [Zenyth](https://www.zenythgroup.com) to provide comprehensive accessibility audits of our platform.
+
+Professional auditors at Zenyth review both workflows (e.g., newsletter subscription) and common elements (e.g., the website footer) against  [WCAG 2.1](https://www.w3.org/TR/WCAG21/) A and AA and provide Accessibility Conformance Reports (ACRs) for both the authoring platform and the subscriber-facing website.
+
+Review past ACRs:
+
+* [2023](https://ghost.org/accessibility/acr/2023)
+* [2022](https://ghost.org/accessibility/acr/2022)
+* [2021](https://ghost.org/accessibility/acr/2021)
