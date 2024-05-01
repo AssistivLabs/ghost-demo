@@ -64,7 +64,7 @@ The following are some tools we recommend for checking your work:
 * [WebAIM Contrast Checker](https://webaim.org/resources/contrastchecker/)
 * [Adobe Color Contrast Analyzer](https://color.adobe.com/create/color-contrast-analyzer)
 
-By taking advantage of the resources listed above, you will help us by reducing the number of issues raised by the yearly external audits we commission.
+By taking advantage of the resources listed above, you will help us by reducing the number of issues raised by the yearly [external audits](#external-audits) we commission.
 
 ## Accessibility as part of our “definition of done” in the SDLC
 
@@ -94,7 +94,7 @@ All of the preceding guidance is in service of end-users, ultimately, but our be
 
 On approximately a yearly cadence, the Ghost Foundation contracts with [Zenyth](https://www.zenythgroup.com) to provide comprehensive accessibility audits of our platform.
 
-Professional auditors at Zenyth review both workflows (e.g., newsletter subscription) and common elements (e.g., the website footer) against  [WCAG 2.1](https://www.w3.org/TR/WCAG21/) A and AA and provide Accessibility Conformance Reports (ACRs) for both the authoring platform and the subscriber-facing website.
+Professional auditors at Zenyth review both workflows (e.g., newsletter subscription) and common elements (e.g., the website footer) against  [WCAG 2.2](https://www.w3.org/TR/WCAG22/) A and AA and provide Accessibility Conformance Reports (ACRs) for both the authoring platform and the subscriber-facing website.
 
 Review past ACRs:
 
