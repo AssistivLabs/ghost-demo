@@ -138,7 +138,7 @@ export default class UiService extends Service {
             }
 
             if (titleToken) {
-                tokens.unshift(titleToken);
+                tokens.push(titleToken);
             }
 
             currentRoute = currentRoute.parent;

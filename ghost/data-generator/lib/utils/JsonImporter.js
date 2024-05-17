@@ -27,7 +27,7 @@ class JsonImporter {
             }
         }
         if (rows.findIndex(row => row === 'id') === -1) {
-            rows.unshift('id');
+            rows.push('id');
         }
         await this.knex.batchInsert(name, data, 500).transacting(this.transaction);
     }
