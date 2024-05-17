@@ -117,7 +117,7 @@ export default class PostsController extends Controller {
             .sort((tagA, tagB) => tagA.name.localeCompare(tagB.name, undefined, {ignorePunctuation: true}));
 
         const options = tags.toArray();
-        options.push({name: 'All tags', slug: null});
+        options.unshift({name: 'All tags', slug: null});
 
         return options;
     }
@@ -133,7 +133,7 @@ export default class PostsController extends Controller {
         const authors = this._availableAuthors;
         const options = authors.toArray();
 
-        options.push({name: 'All authors', slug: null});
+        options.unshift({name: 'All authors', slug: null});
 
         return options;
     }

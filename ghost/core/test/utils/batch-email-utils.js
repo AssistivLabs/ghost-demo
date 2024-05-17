@@ -199,8 +199,8 @@ async function matchEmailSnapshot() {
     } else {
         // Sometimes uuid is not used if link tracking is disabled
         // Need to replace unsubscribe url instead (uuid is missing but it is inside the usubscribe url, causing snapshot updates)
-        // Need to use push to make replacement work before newsletter uuid
-        ignoreReplacements.push({
+        // Need to use unshift to make replacement work before newsletter uuid
+        ignoreReplacements.unshift({
             match: lastEmail.recipientData.unsubscribe_url,
             replacement: 'unsubscribe_url'
         });

@@ -25,10 +25,10 @@ _private.getErrorTemplateHierarchy = function getErrorTemplateHierarchy(statusCo
     const templateList = ['error'];
 
     // Add error class template: E.g. error-4xx.hbs or error-5xx.hbs
-    templateList.push('error-' + errorCode[0] + 'xx');
+    templateList.unshift('error-' + errorCode[0] + 'xx');
 
     // Add statusCode specific template: E.g. error-404.hbs
-    templateList.push('error-' + errorCode);
+    templateList.unshift('error-' + errorCode);
 
     return templateList;
 };
@@ -50,22 +50,22 @@ _private.getEntriesTemplateHierarchy = function getEntriesTemplateHierarchy(rout
 
     // CASE: author, tag, custom collection name
     if (routerOptions.name && routerOptions.name !== 'index') {
-        templateList.push(routerOptions.name);
+        templateList.unshift(routerOptions.name);
 
         if (routerOptions.slugTemplate && requestOptions.slugParam) {
-            templateList.push(routerOptions.name + '-' + requestOptions.slugParam);
+            templateList.unshift(routerOptions.name + '-' + requestOptions.slugParam);
         }
     }
 
     // CASE: collections/channels can define a template list
     if (routerOptions.templates && routerOptions.templates.length) {
         routerOptions.templates.forEach((template) => {
-            templateList.push(template);
+            templateList.unshift(template);
         });
     }
 
     if (routerOptions.frontPageTemplate && (requestOptions.path === '/' || requestOptions.path === '/' && requestOptions.page === 1)) {
-        templateList.push(routerOptions.frontPageTemplate);
+        templateList.unshift(routerOptions.frontPageTemplate);
     }
 
     return templateList;
@@ -87,15 +87,15 @@ _private.getEntryTemplateHierarchy = function getEntryTemplateHierarchy(postObje
     let slugTemplate = 'post-' + postObject.slug;
 
     if (context === 'page') {
-        templateList.push('page');
+        templateList.unshift('page');
         slugTemplate = 'page-' + postObject.slug;
     }
 
     if (postObject.custom_template) {
-        templateList.push(postObject.custom_template);
+        templateList.unshift(postObject.custom_template);
     }
 
-    templateList.push(slugTemplate);
+    templateList.unshift(slugTemplate);
 
     return templateList;
 };

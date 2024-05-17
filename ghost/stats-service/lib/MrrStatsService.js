@@ -90,7 +90,7 @@ class MrrStatsService {
                 continue;
             }
 
-            results.push({
+            results.unshift({
                 date,
                 mrr: Math.max(0, currentTotals[row.currency]),
                 currency: row.currency
@@ -102,10 +102,10 @@ class MrrStatsService {
         // Now also add the oldest days we have left over and do not have deltas
         const oldestDate = rows.length > 0 ? moment(rows[0].date).add(-1, 'days').format('YYYY-MM-DD') : today;
 
-        // Note that we also need to loop the totals in reverse order because we need to push
+        // Note that we also need to loop the totals in reverse order because we need to unshift
         for (let i = totals.length - 1; i >= 0; i -= 1) {
             const total = totals[i];
-            results.push({
+            results.unshift({
                 date: oldestDate,
                 mrr: Math.max(0, currentTotals[total.currency]),
                 currency: total.currency

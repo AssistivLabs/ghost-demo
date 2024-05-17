@@ -387,7 +387,7 @@ export default class PostsContextMenu extends Component {
             const model = this.store.peekRecord(this.type, data.id);
 
             // Update infinity list
-            this.selectionList.infinityModel.content.pushObject(model);
+            this.selectionList.infinityModel.content.unshiftObject(model);
 
             // Show notification
             this.notifications.showNotification(this.#getToastMessage('duplicated'), {type: 'success'});

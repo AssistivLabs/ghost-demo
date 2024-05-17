@@ -430,7 +430,7 @@ export function getSiteProducts({site, pageQuery}) {
         return [];
     }
     if (hasFreeProductPrice({site})) {
-        products.push({
+        products.unshift({
             id: 'free',
             type: 'free'
         });

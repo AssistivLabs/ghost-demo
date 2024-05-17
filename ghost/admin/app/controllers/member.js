@@ -87,7 +87,7 @@ export default class MemberController extends Controller {
             .sort((labelA, labelB) => labelA.name.localeCompare(labelB.name, undefined, {ignorePunctuation: true}));
         let options = labels.toArray();
 
-        options.pushObject({name: 'All labels', slug: null});
+        options.unshiftObject({name: 'All labels', slug: null});
 
         return options;
     }

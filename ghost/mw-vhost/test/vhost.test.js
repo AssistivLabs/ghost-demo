@@ -102,7 +102,7 @@ describe('vhost(hostname, server)', function () {
         const listeners = server.listeners('request');
 
         server.removeAllListeners('request');
-        listeners.push(function (req) {
+        listeners.unshift(function (req) {
             req.headers.host = undefined;
         });
         listeners.forEach(function (l) {

@@ -122,7 +122,7 @@ describe('UNIT - services/routing/CollectionRouter', function () {
         it('with templates', function () {
             const collectionRouter = new CollectionRouter('/magic/', {permalink: '/:slug/', templates: ['home', 'index']}, RESOURCE_CONFIG, routerCreatedSpy);
 
-            // they are getting reversed because we push the templates in the helper
+            // they are getting reversed because we unshift the templates in the helper
             collectionRouter.templates.should.eql(['index', 'home']);
         });
     });

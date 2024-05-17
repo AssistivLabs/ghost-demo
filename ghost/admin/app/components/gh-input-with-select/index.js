@@ -27,7 +27,7 @@ export default class GhInputWithSelectComponent extends Component {
             if (this.args.showCreatePosition === 'bottom'){
                 results.push(this.buildSuggestionForTerm(term));
             } else {
-                results.push(this.buildSuggestionForTerm(term));
+                results.unshift(this.buildSuggestionForTerm(term));
             }
         }
     }

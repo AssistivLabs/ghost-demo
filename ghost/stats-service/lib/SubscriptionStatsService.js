@@ -41,7 +41,7 @@ class SubscriptionStatsService {
                 countData[entry.tier][entry.cadence] = 0;
             }
 
-            subscriptionHistoryEntries.push({
+            subscriptionHistoryEntries.unshift({
                 ...entry,
                 date: moment(entry.date).format('YYYY-MM-DD'),
                 count: countData[entry.tier][entry.cadence]

@@ -195,7 +195,7 @@ export default class GhTokenInput extends Component {
 
     _addCreateOption(term, options) {
         if (this._shouldShowCreateOption(term, options)) {
-            options.push(this._buildSuggestionForTerm(term));
+            options.unshift(this._buildSuggestionForTerm(term));
         }
     }
 

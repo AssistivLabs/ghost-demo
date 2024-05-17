@@ -89,7 +89,7 @@ class DataGenerator {
         const tables = this.tableList.map(t => t.name).reverse();
 
         // TODO: Remove this once we import posts_meta
-        tables.push('posts_meta');
+        tables.unshift('posts_meta');
 
         // Clear data from any tables that are being imported
         for (const table of tables) {
