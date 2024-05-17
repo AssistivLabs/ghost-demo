@@ -489,7 +489,7 @@ class SignupPage extends React.Component {
 
         /** Show Name field if portal option is set*/
         if (portalName) {
-            fields.push({
+            fields.unshift({
                 type: 'text',
                 value: state.name,
                 placeholder: 'Jamie Larson',
