@@ -65,7 +65,8 @@ const Form: React.FC<FormProps> = ({isMinimal, loading, success, error, buttonCo
                     data-testid="input"
                     disabled={loading || success}
                     placeholder={t('Your email address')}
-                    type="text"
+                    type="email"
+                    autocomplete="email"
                     value={email}
                     onChange={e => setEmail(e.target.value)}
                 />
