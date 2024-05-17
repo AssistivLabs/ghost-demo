@@ -198,7 +198,7 @@ export default class OfferPage extends React.Component {
         }
 
         if (showNameField) {
-            fields.unshift({
+            fields.push({
                 type: 'text',
                 value: member?.name || state.name,
                 placeholder: 'Jamie Larson',
