@@ -87,7 +87,7 @@ class MembersStatsService {
                 // Skip results that are in the future (fix for invalid events)
                 continue;
             }
-            cumulativeResults.unshift({
+            cumulativeResults.push({
                 date,
                 paid: Math.max(0, paid),
                 free: Math.max(0, free),
@@ -107,7 +107,7 @@ class MembersStatsService {
         // Now also add the oldest day we have left over (this one will be zero, which is also needed as a data point for graphs)
         const oldestDate = rows.length > 0 ? moment(rows[0].date).add(-1, 'days').format('YYYY-MM-DD') : today;
 
-        cumulativeResults.unshift({
+        cumulativeResults.push({
             date: oldestDate,
             paid: Math.max(0, paid),
             free: Math.max(0, free),
